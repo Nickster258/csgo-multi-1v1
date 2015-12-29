@@ -76,6 +76,12 @@
 								$WL = round($wins/$losses, 2);
 							}
 
+							<div class=\"playerAvatar ".getPlayerState(GetCommunityID($auth))."\"><a href=\"http://steamcommunity.com/profiles/".GetCommunityID($auth)."\"><img src=\"".getAvatar(GetCommunityID($auth))."\" height=\"184\" width=\"184\"/></a>";
+							if (isPlayerActive($lastTime) == true){
+								echo "<div class=\"activity inactive\">INACTIVE</div></div>";
+							} else{
+								echo "<div class=\"activity\">ACTIVE</div></div>";
+							}
 							echo "<h3>Stats for player: <a href=\"http://steamcommunity.com/profiles/".GetCommunityID($auth)."\">$name</a></h3>
 							<div class=\"stats\">
 							<h4>Rank: $rank of $totalplayers</h4><br>
@@ -83,12 +89,7 @@
 							<h4>Losses: $losses</h4><br>
 							<h4>W/L Ratio: $WL</h4><br>
 							<h4>ELO Rating: $rating</h4><br>
-							<div class=\"playerAvatar ".getPlayerState(GetCommunityID($auth))."\"><a href=\"http://steamcommunity.com/profiles/".GetCommunityID($auth)."\"><img src=\"".getAvatar(GetCommunityID($auth))."\" height=\"184\" width=\"184\"/></a>";
-							if (isPlayerActive($lastTime) == true){
-								echo "<div class=\"activity inactive\">INACTIVE</div></div>";
-							} else{
-								echo "<div class=\"activity\">ACTIVE</div></div>";
-							}
+							
 						}
 						}
 				} else{
