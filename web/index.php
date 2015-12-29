@@ -17,8 +17,8 @@
 ?>
 
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-<link rel="stylesheet" media="screen and (max-width: 790px)" href="http://stats.absurdminds.net/css/style_main.css">
-<link rel="stylesheet" media="screen and (min-width: 791px)" href="http://stats.absurdminds.net/css/style_main.css">
+<link rel="stylesheet" media="screen and (max-width: 790px)" href="css/style_main.css">
+<link rel="stylesheet" media="screen and (min-width: 791px)" href="css/style_main.css">
 </head>
 <body>
 <div class="container">
