@@ -5,7 +5,7 @@ $generated = "<table class=\"tg\" width=\"450px\">
 		<th class=\"tg-dilm\" width=\"200\">Name</th>
 		<th class=\"tg-dilm\">Wins</th>
 		<th class=\"tg-dilm\">Losses</th>
-		<th class=\"tg-dilm\">W/L Ratio</th>
+		<th class=\"tg-dilm\">Win-Loss Ratio</th>
 		<th class=\"tg-dilm\">ELO Rank</th>
 	</tr>";
 
