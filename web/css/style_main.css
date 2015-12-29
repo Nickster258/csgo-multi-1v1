@@ -23,7 +23,7 @@ a						{color:#000;text-decoration:none;outline:0 none;}
 a:hover			{color:#000;  text-decoration:none;}
 h1					{font-size:24px;}
 h2					{font-size:22px;}
-h3					{font-size:18px;}
+h3					{font-size:18px;float: left; z-index: -1;color:rgb(0,155,255);}
 h4					{font-size:16px;}
 h5					{font-size:14px;}
 h6					{font-size:12px;}
@@ -55,24 +55,24 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 	height: 100px;
 }
 .search{
-	top: 15px;
-	right: 20px;
-	position: absolute;
+	top: -10px;
+	float: right;
+	right: 0px;
+	position: relative;
 }
 .searchnoinfo{
 	margin: 0 auto 0 auto;
 	width: 202px; 
 }
 .stats{
-	padding-top:20px;
-	padding-left:50px;
+	padding-top:50px;
+	padding-left:20px;
 	margin-top:auto;
 	margin-bottom:auto;
 	height:auto;
-	background-color: #f6f6f6;
-	border: 1px solid #eeeeee;
 }
 .everything	{
+	min-width: 750px;
 	padding:20px 20px 20px 20px;
 	position: absolute;
 	top:0;
@@ -86,17 +86,16 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 	font-family:"Trebuchet MS",Arial, Helvetica;
 	font-size:24px;
 	font-weight:normal;
-	color:#339966;
+	color:#0065FF;
 	margin:0 0 25px 0;
 	line-height:1;
 	text-align: center;
 }
 .everything h4{
 	font-family:"Trebuchet MS",Arial, Helvetica;
-	font-size:50px;
-	font-weight:bold;
-	color:#339966;
-	margin:0 0 25px 0;
+	font-size:35px;
+	font-weight:normal;
+	color:#444444;
 	line-height:1;
 }
 .everything h5{
@@ -115,23 +114,38 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 }
 
 .playerAvatar {
-	position:absolute;
-	right:50px;
-	top:90px;
-	padding: 4px;
-	border-radius: 3px;
+	position:relative;
+	float: right;
+	right: 10px;
+	bottom: -10px;
+	padding: 6px;
+	border-radius: 5px;
 	background-color: #545454;
 }
 .playerAvatar.offline {
 
-	background: -moz-linear-gradient(top, #706c6b 5%, #4e4d4d 95%);background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#706c6b), color-stop(95%,#4e4d4d));background: -webkit-linear-gradient(top, #706c6b 5%,#4e4d4d 95%);background: -o-linear-gradient(top, #706c6b 5%,#4e4d4d 95%);background: -ms-linear-gradient(top, #706c6b 5%,#4e4d4d 95%);background: linear-gradient(to bottom, #706c6b 5%,#4e4d4d 95%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#706c6b', endColorstr='#4e4d4d',GradientType=0 );	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
+	float: right; 
+	background: -moz-linear-gradient(top, #706c6b 5%, #4e4d4d 95%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#706c6b), color-stop(95%,#4e4d4d));
+	background: -webkit-linear-gradient(top, #706c6b 5%,#4e4d4d 95%);
+	background: -o-linear-gradient(top, #706c6b 5%,#4e4d4d 95%);
+	background: -ms-linear-gradient(top, #706c6b 5%,#4e4d4d 95%);
+	background: linear-gradient(to bottom, #706c6b 5%,#4e4d4d 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#706c6b', endColorstr='#4e4d4d',GradientType=0 );
+	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
 	filter: none;
 }
 	/* #8dccff to 6da1d0 */
 .playerAvatar.online {
 	background-color: #7bafd6;
-
-	background: -moz-linear-gradient(top, #7bafd6 5%, #506d92 95%);background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#7bafd6), color-stop(95%,#506d92));background: -webkit-linear-gradient(top, #7bafd6 5%,#506d92 95%);background: -o-linear-gradient(top, #7bafd6 5%,#506d92 95%);background: -ms-linear-gradient(top, #7bafd6 5%,#506d92 95%);background: linear-gradient(to bottom, #7bafd6 5%,#506d92 95%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bafd6', endColorstr='#506d92',GradientType=0 );	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
+	background: -moz-linear-gradient(top, #7bafd6 5%, #506d92 95%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#7bafd6), color-stop(95%,#506d92));
+	background: -webkit-linear-gradient(top, #7bafd6 5%,#506d92 95%);
+	background: -o-linear-gradient(top, #7bafd6 5%,#506d92 95%);
+	background: -ms-linear-gradient(top, #7bafd6 5%,#506d92 95%);
+	background: linear-gradient(to bottom, #7bafd6 5%,#506d92 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bafd6', endColorstr='#506d92',GradientType=0 );	
+	/* IE <= 9 doesn't support rounded corners and gradient.  The gradient isn't too noticable so just disable the filter in IE9 */
 	filter: none;
 }
 .playerAvatar.online img {
@@ -158,12 +172,32 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 }
 .activity{
 	position:relative;
-	top:15px;
+	float: right;
+	top:215px;
+	right: -133px;
 	font-size:25px;	
 	font-weight:bold;
 	margin: 0 auto;
-	color: rgb(0,255,0);
+	color: rgb(0,155,255);
 }
 .activity.inactive{
 	color: rgb(255,0,0);
+}
+.statholder{
+	padding-top: 65px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin: auto;
+	width: 100%;
+	min-width: 750px;
+	max-width: 850px;
+}
+.generatetime{
+	position:absolute;
+    left:50%;
+    transform: translate(-50%, 0);
+}
+
+#statscolor{
+	color: rgb(0,155,255);
 }
