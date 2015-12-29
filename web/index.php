@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="description" content="The 1v1 Arena page for AbsurdMinds">
+<meta name="keywords" content="AbsurdMinds, Counter-Strike, Arena, 1v1," />
 
 <?php
 	require_once 'includes/config.inc.php';
@@ -14,7 +17,8 @@
 ?>
 
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" media="screen and (max-width: 790px)" href="http://stats.absurdminds.net/css/style_main.css">
+<link rel="stylesheet" media="screen and (min-width: 791px)" href="http://stats.absurdminds.net/css/style_main.css">
 </head>
 <body>
 <div class="container">
@@ -31,7 +35,7 @@
 			?>
 
 				<form action="search.php" method="GET">
-				<h6>Search player stats:</h6><input type="text" name="searchquery">
+				<h6>Find user:</h6><input type="text" name="searchquery">
 				<input type="submit" value="Submit">
 				</form>
 			</div>
@@ -86,7 +90,7 @@
 							<h4>Rank: <span id="statscolor">$rank</span> of <span id="statscolor">$totalplayers</span></h4><br>
 							<h4>Wins: <span id="statscolor">$wins</span></h4><br>
 							<h4>Losses: <span id="statscolor">$losses</span></h4><br>
-							<h4>W/L Ratio: <span id="statscolor">$WL</span></h4><br>
+							<h4>Win/Loss Ratio: <span id="statscolor">$WL</span></h4><br>
 							<h4>ELO Rating: <span id="statscolor">$rating</span></h4><br>
 							
 						}
