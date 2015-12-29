@@ -1,10 +1,12 @@
-###This is an edit of Splewis' multi-1v1 arena mod. I have made this an edit due to the custom features that were implemented in the AbsurdMinds 1v1 arena page.
+###csgo-multi-1v1 - AbsurdMinds edit
+
+This is an edit of Splewis' multi-1v1 arena mod. I have made this an edit due to the custom features that were implemented in the AbsurdMinds 1v1 arena page.
 
 This is currently in beta and not in use, but features a responsive layout with both desktop and mobile versions.
 
 For more information on AbsurdMinds, visit http://absurdminds.net.
 
-csgo-multi-1v1 - AbsurdMinds edit
+csgo-multi-1v1
 =======================================
 
 [![Build status](http://ci.splewis.net/job/csgo-multi-1v1/badge/icon)](http://ci.splewis.net/job/csgo-multi-1v1/)
