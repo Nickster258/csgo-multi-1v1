@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -82,13 +81,13 @@
 							} else{
 								echo "<div class=\"activity\">ACTIVE</div></div>";
 							}
-							echo "<h3>Stats for player: <a href=\"http://steamcommunity.com/profiles/".GetCommunityID($auth)."\">$name</a></h3>
+							echo "<h3><span id="statscolor">Stats for</span> <a href=\"http://steamcommunity.com/profiles/".GetCommunityID($auth)."\">$name</a></h3>
 							<div class=\"stats\">
-							<h4>Rank: $rank of $totalplayers</h4><br>
-							<h4>Wins: $wins</h4><br>
-							<h4>Losses: $losses</h4><br>
-							<h4>W/L Ratio: $WL</h4><br>
-							<h4>ELO Rating: $rating</h4><br>
+							<h4>Rank: <span id="statscolor">$rank</span> of <span id="statscolor">$totalplayers</span></h4><br>
+							<h4>Wins: <span id="statscolor">$wins</span></h4><br>
+							<h4>Losses: <span id="statscolor">$losses</span></h4><br>
+							<h4>W/L Ratio: <span id="statscolor">$WL</span></h4><br>
+							<h4>ELO Rating: <span id="statscolor">$rating</span></h4><br>
 							
 						}
 						}
