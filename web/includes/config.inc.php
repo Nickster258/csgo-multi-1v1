@@ -13,6 +13,9 @@ $mysql_pass = '';
 $mysql_db = '';
 $mysql_table = 'multi1v1_stats'; //Default table set by game plugin. Do not change this if you don't know what you are doing.
 
+$defualt_href = "http://"; //To condense the necessary size of the html
+$page_website = "absurdminds.net"; //Home website of the host of the 1v1 server.
+$page_image = "images/logo.png"; //Logo file location
 $page_title = "Multi 1v1 Arena";
 $SteamAPI_Key = ""; //https://steamcommunity.com/dev/apikey
 $antisquatter_rate_loss = 40; //Rate loss constant. A higher value equals a higher rate loss per day of inactivity.
