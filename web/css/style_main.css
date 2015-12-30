@@ -14,13 +14,13 @@ abbr,acronym { border:0;}
 .no_bg {background:none !important;}
 textarea:focus, input:focus{outline:none;}
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-dilm{background-color:#c0c0c0;color:#000000;}
-.tg .tg-bsv2{background-color:#efefef;color:#000000;}
+.tg td{	font-family:Arial,sans-serif;font-size:14px;padding:24px 5px 0px 0px;overflow:hidden;word-break:normal;}
+.tg th{	font-family:Arial,sans-serif;font-size:14px;font-weight:bold;padding:10px 5px;overflow:hidden;word-break:normal;}
+.tg .tg-dilm{color:#000000;padding-left:12px;text-align:center;}
+.tg .tg-bsv2{color:#000000;padding-left:12px;text-align:center;}
 /**************************************************************************************/
-a						{color:#000;text-decoration:none;outline:0 none;}
-a:hover			{color:#000;  text-decoration:none;}
+a					{color: #000;text-decoration:none;outline:0 none;}
+a:hover					{color: #666;  text-decoration:none;}
 h1					{font-size:24px;}
 h2					{font-size:22px;}
 h3					{font-size:18px;float: left; z-index: -1;color:rgb(0,155,255);}
@@ -72,7 +72,7 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 	height:auto;
 }
 .everything	{
-	min-width: 750px;
+	min-width: 850px;
 	padding:20px 20px 20px 20px;
 	position: absolute;
 	top:0;
@@ -80,7 +80,13 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 	left: 0;
 	right: 0;
 	margin: auto;
+	height: 100%;
 	background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=f6f6f6ff&noise=d6d6d6&density=100&opacity=22");
+    background: rgb(250,250,255); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(blue, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(blue, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(blue, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(0,55,255), rgb(250,250,255)); /* Standard syntax */
 }
 .everything h3{
 	font-family:"Trebuchet MS",Arial, Helvetica;
@@ -115,8 +121,9 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 
 .playerAvatar {
 	position:relative;
+	top: 40px;
 	float: right;
-	right: 10px;
+	right: -210px;
 	bottom: -10px;
 	padding: 6px;
 	border-radius: 5px;
@@ -166,15 +173,15 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 }
 .topPlayers{
 	position:absolute;
-	top:150px;
-	left:50%;
-	margin-left:-225px;
+	top:10px;
+ 	left:50%;
+	transform: translate(-50%, 0);
 }
 .activity{
 	position:relative;
 	float: right;
-	top:215px;
-	right: -133px;
+	top:15px;
+	right: 44px;
 	font-size:25px;	
 	font-weight:bold;
 	margin: 0 auto;
@@ -183,21 +190,29 @@ body					{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px;}
 .activity.inactive{
 	color: rgb(255,0,0);
 }
-.statholder{
-	padding-top: 65px;
+.statsholder{
+	position: absolute;
+	top: 200px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin: auto;
-	width: 100%;
-	min-width: 750px;
-	max-width: 850px;
+	width: 850px;
+	left:50%;
+	transform: translate(-50%, 0);
 }
 .generatetime{
+	top: 500px;
 	position:absolute;
-    left:50%;
-    transform: translate(-50%, 0);
+ 	left:50%;
+	transform: translate(-50%, 0);
 }
 
 #statscolor{
 	color: rgb(0,155,255);
+}
+.logo{
+	position:absolute;
+	padding-bottom: 10px;
+	left:50%;
+	transform: translate(-50%, 0);
 }
